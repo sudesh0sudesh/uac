@@ -16,6 +16,12 @@ All notable changes to this project will be documented in this file.
   - Updated to include `ps -eo user,pid,ppid,pcpu,pmem,tty,stat,etime,args` [aix, freebsd, linux, macos, netbsd, netscaler, openbsd].
   - Updated to include `ps -eo user,pid,ppid,pcpu,pmem,tty,s,etime,args` [solaris].
 
+### Removed Artifacts
+
+- `live_response/process/ps.yaml`:
+  - `ps auxwwwf`, `ps -deaf` and `ps -efl` commands were removed.
+  - `date` command was removed. The exact date and time when `ps` was executed can be checked in the `uac.log` file.
+
 ### Fixed
 
 ### Tools
